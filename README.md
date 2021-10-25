@@ -34,12 +34,17 @@ Key Mechanisms:
 -> Install Google Play Services for AR in your android phone.
 
 -> Include Dependencies in Build.gradle
+```
 implementation ′com.google.ar:core:1.14.0′
+```
 
 -> Open AndroidManifest.xml and add the following after the manifest tag:
 
+```
 <uses−permission android:name="android.permission.CAMERA" />
+```
 
+```
 <uses−feature
   android:name="android.hardware.camera.ar"
   android:required="true" />
@@ -50,7 +55,8 @@ implementation ′com.google.ar:core:1.14.0′
 -> Also, add the following just before the closing application tag:
 <meta−data
   android:name="com.google.ar.core"
-  android:value="required" />
+  android:value="required" />  
+```
 
 
 --------------------------------------------------------------------------------------------------------------------------------
